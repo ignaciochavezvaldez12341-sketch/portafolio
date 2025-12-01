@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Jesús Ignacio Chávez Valdez</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header con información personal -->
+    <header>
+        <div class="container">
+            <div class="profile-section">
+                <img src="perfil.jpg" alt="Jesús Ignacio Chávez Valdez" class="profile-img" id="profileImg">
+                <div class="profile-info">
+                    <h1>Jesús Ignacio Chávez Valdez</h1>
+                    <p class="subtitle">Desarrollador Web Full Stack</p>
+                    <div class="social-links">
+                        <a href="https://github.com/ignaciochavezvaldez12341-sketch" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="ignaciochavezvaldez12341@gmail.com" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de proyectos -->
+    <main>
+        <div class="container">
+            <section class="projects-section">
+                <h2 class="section-title">Mis Proyectos</h2>
+                
+                <!-- Loader mientras carga -->
+                <div id="loading" class="loading">
+                    <div class="spinner"></div>
+                    <p>Cargando proyectos...</p>
+                </div>
+
+                <!-- Grid de proyectos -->
+                <div id="projectsGrid" class="projects-grid" style="display: none;">
+                    <!-- Los proyectos se cargarán dinámicamente aquí -->
+                </div>
+
+                <!-- Mensaje de error si no se pueden cargar -->
+                <div id="errorMessage" class="error-message" style="display: none;">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>No se pudieron cargar los proyectos. Por favor, intenta más tarde.</p>
+                </div>
+            </section>
+
+            <!-- Sección Sobre Mí -->
+            <section class="about-section">
+                <h2 class="section-title">Sobre Mí</h2>
+                <div class="about-content">
+                    <p>Soy un desarrollador web apasionado por crear soluciones innovadoras y funcionales. Me especializo en tecnologías web modernas y siempre estoy buscando aprender nuevas habilidades.</p>
+                    <div class="skills">
+                        <div class="skill-tag">HTML5</div>
+                        <div class="skill-tag">CSS3</div>
+                        <div class="skill-tag">JavaScript</div>
+                        <div class="skill-tag">Git</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Jesús Ignacio Chávez Valdez. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
